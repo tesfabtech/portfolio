@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Business Analytics Dashboard | Tesfab Tefera</title>
+    <link rel="icon" href="favicon-circle.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="details.css">
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <a href="#" class="logo">Tesfab<span>Tefera</span></a>
+    <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="nav-links">
+        <a href="index.html#home">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#skills">Skills</a>
+        <a href="index.html#contact">Contact</a>
+    </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu">
+    <div class="close-btn">
+        <i class="fas fa-times"></i>
+    </div>
+    <a href="index.html#home">Home</a>
+    <a href="index.html#about">About</a>
+    <a href="index.html#services">Services</a>
+    <a href="index.html#projects">Projects</a>
+    <a href="index.html#skills">Skills</a>
+    <a href="index.html#contact">Contact</a>
+</div>
+
+
+    <div class="container">
+        <h1 style="text-align: center;">Business Analytics Dashboard</h1>
+
+        <div class="project-top-grid">
+            <div class="project-slider">
+                <div class="slider-wrapper">
+                    <img src="images/admindashboard.jpg" alt="Dashboard Overview" class="slider-image active">
+                    <img src="images/admin_products.jpg" alt="Orders Chart" class="slider-image">
+                    <img src="images/admin_orders.jpg" alt="Daily Weekly Monthly Toggle" class="slider-image">
+                    <img src="images/admin_blogs.jpg" alt="Products Table" class="slider-image">
+                    <img src="images/admin_users.jpg" alt="Products Table" class="slider-image">
+                    <img src="images/admin_admins.jpg" alt="Products Table" class="slider-image">
+                </div>
+                <div class="slider-controls">
+                    <button onclick="prevSlide()"><i class="fas fa-chevron-left"></i></button>
+                    <button onclick="nextSlide()"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                <div class="slider-indicators" id="indicators"></div>
+                <div class="slide-counter" id="slideCounter">1 / 8</div>
+            </div>
+            <div class="project-features">
+                <h3>Key Features</h3>
+                <ul>
+                    <li>Dynamic charts showing orders over time</li>
+                    <li>Toggles to switch between Daily, Weekly, Monthly analytics</li>
+                    <li>Product, Orders & Users management tables</li>
+                    <li>Admin authentication with role-based access</li>
+                    <li>Real-time counts for products, orders, and users</li>
+                    <li>Responsive design optimized for any device</li>
+                    <li>use username: <strong>Girma</strong> and PWD: <strong>girma2002</strong> to access</li>
+                </ul>
+                <a href="http://sabasteps.atwebpages.com/shoe-store/admin/dashboard.php" target="_blank" class="btn">
+                    <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+            </div>
+        </div>
+
+        <div class="project-bottom-grid">
+            <div class="project-description">
+                <h2>Project Description</h2>
+                <p>This admin dashboard provides a comprehensive overview of the e-commerce platform. It features
+                    real-time insights into orders, products, and users with interactive graphs and toggles for daily,
+                    weekly, and monthly views. The dashboard also includes secure admin login, tables for managing
+                    inventory,
+                    and responsive layouts ensuring smooth experience across devices.</p>
+            </div>
+            <div class="project-tech">
+                <h3>Technologies Used</h3>
+                <div class="tech-tags">
+                    <span class="tech-tag">HTML</span>
+                    <span class="tech-tag">CSS3</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">PHP</span>
+                    <span class="tech-tag">MySQL</span>
+                    <span class="tech-tag">Chart.js</span>
+                    <span class="tech-tag">AJAX</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Tesfab Tefera</h3>
+                <p>Fullstack web developer creating modern, responsive, and user-friendly websites and applications.
+                </p>
+                <div class="footer-social">
+                    <a href="https://github.com/tesfabtech" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://x.com/tesfab94" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com/tesfab94" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Services</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">Responsive Design</a></li>
+                    <li><a href="#">UI/UX Design</a></li>
+                    <li><a href="#">E-commerce Solutions</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Tesfab Tefera. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slider-image');
+    const indicatorsContainer = document.getElementById('indicators');
+    const slideCounter = document.getElementById('slideCounter');
+    let slideInterval;
+
+    // Create indicators
+    slides.forEach((_, index) => {
+        const indicator = document.createElement('div');
+        indicator.classList.add('indicator');
+        if (index === currentSlide) indicator.classList.add('active');
+        indicator.addEventListener('click', () => goToSlide(index));
+        indicatorsContainer.appendChild(indicator);
+    });
+
+    const indicators = document.querySelectorAll('.indicator');
+
+    function updateSlideCounter() {
+        slideCounter.textContent = `${currentSlide + 1} / ${slides.length}`;
+    }
+
+    function updateIndicators() {
+        indicators.forEach((indicator, index) => {
+            indicator.classList.toggle('active', index === currentSlide);
+        });
+    }
+
+    function updateSlideClasses() {
+        slides.forEach((slide, index) => {
+            slide.classList.remove('active', 'prev', 'next');
+            if (index === currentSlide) slide.classList.add('active');
+            else if (index === (currentSlide + 1) % slides.length) slide.classList.add('next');
+            else if (index === (currentSlide - 1 + slides.length) % slides.length) slide.classList.add('prev');
+        });
+    }
+
+    function showSlide(index) {
+        currentSlide = index;
+        updateSlideClasses();
+        updateIndicators();
+        updateSlideCounter();
+    }
+
+    function goToSlide(index) {
+        showSlide(index);
+        resetInterval();
+    }
+
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+        resetInterval();
+    }
+
+    function prevSlide() {
+        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+        showSlide(currentSlide);
+        resetInterval();
+    }
+
+    function resetInterval() {
+        clearInterval(slideInterval);
+        slideInterval = setInterval(nextSlide, 5000);
+    }
+
+    // Init
+    updateSlideClasses();
+    updateSlideCounter();
+    slideInterval = setInterval(nextSlide, 5000);
+
+    document.querySelector('.project-slider').addEventListener('mouseenter', () => clearInterval(slideInterval));
+    document.querySelector('.project-slider').addEventListener('mouseleave', resetInterval);
+    document.addEventListener('keydown', e => {
+        if (e.key === 'ArrowRight') nextSlide();
+        if (e.key === 'ArrowLeft') prevSlide();
+    });
+</script>
+</body>
+
+</html>
